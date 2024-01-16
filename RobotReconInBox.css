@@ -7,14 +7,18 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 /* I am using Google Fonts Russo One, which can be DLed here - https://fonts.google.com/share?selection.family=Russo+One */
 /* It must be installed locally, I'm lazy and didn't want to code out the style link */
 
-/* This is the no image available text */
-.no-bot-image.confirmed { visibility: hidden; position: relative }
+/* This is the no image available text that we want to strip away */
+.no-bot-image.confirmed { visibility: hidden; position: relative; }
 
-/* Replacing the no image text - https://www.geeksforgeeks.org/how-to-replace-text-with-css/ */
+/* This replaces the above 'no image' text - https://www.geeksforgeeks.org/how-to-replace-text-with-css/ */
 .no-bot-image.confirmed:after { visibility: visible; position: absolute; width: 200; height: 200; content: "Rut Roh, No Pic"; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-family: Russo One; font-size: 24px; background-color: rgba(0, 0, 0, 0); }
 
 /* This is the bot name section */
-.bot-name.mb-3 { color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-family: Russo One; font-size: 22px; } 
+/* First one is if you want text to show */
+/* .bot-name.mb-3 { color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-family: Russo One; font-size: 22px; } */
+
+/* Second here is to hide it, if using in-box text somewhere else */
+.bot-name.mb-3 { visibility: hidden; position: relative; }
 
 /* Set image border for .bot-image  */
 .bot-image-wrapper { opacity: 0.75; border-top-style: outset; border-left-style: outset; border-right-style: outset; border-bottom-style: outset; border-color: gray; border-width: 8px; margin-bottom: 0px; }
