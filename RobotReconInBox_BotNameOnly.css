@@ -1,0 +1,15 @@
+/* This is to eliminate all elements except the bot name in Robot Recon */
+/* Can't seem to do wildcarding, so blanket elements are needed */
+
+/* Default setup */
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+
+/* In Box Content */
+
+.no-bot-image { visibility: hidden; }
+.vs { visibility: hidden; }
+.bot-image-wrapper { visibility: hidden; }
+.app-bot-image { visibility: hidden; }
+
+/* This is the bot name section */
+.bot-name.mb-3 { color: Gainsboro; text-shadow: 4px 4px 4px #454545; font-family: Russo One; font-size: 22px; } 
