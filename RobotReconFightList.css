@@ -1,0 +1,32 @@
+/* This is re-create the NERC FightList in Robot Recon */
+
+/* Default setup */
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+
+/* Fight List Content */
+
+/* Fight List literal text */
+.text-center.w-100.mb-3 { font-family: Russo One; font-size: 36px; color: Gainsboro; text-shadow: 2px 2px 4px #000000; letter-spacing: 1.1px }
+
+/* Main Full area below the coming up text */
+.text-center.md.hydrated { border-style: outset; border-color: rgba(236, 58, 25, 0.60); border-radius: 8px; border-width: 10px; background: rgba(50, 50, 50, 0.5); }
+
+/* Removing the images from the bots in the list from everything but what's up next */
+.not-first .no-bot-image { visibility: hidden; max-height: 0; }
+.not-first .bot-image-wrapper { visibility: hidden; max-height: 0; }
+.not-first .app-bot-image { visibility: hidden; max-height: 0; }
+
+/* The stats on either side of the middle label */
+.is-first .stat { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; text-align: center; }
+/* The midddle label with the main field for the stats */
+.is-first .label { font-family: Russo One; color: Gainsboro; text-transform: uppercase; text-shadow: 2px 2px 4px #000000; }
+
+/* VS text and Bot Names for the upcoming fight */
+.is-first .bot-name { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 20px; }
+.is-first .vs { font-family: Russo One; color: rgba(236, 58, 25, 0.7); text-transform: uppercase; text-shadow: 2px 2px 4px #000000; }
+/* Replacing the no image text - https://www.geeksforgeeks.org/how-to-replace-text-with-css/ */
+.is-first .no-bot-image.confirmed:after { visibility: visible; position: absolute; width: 200; height: 200; content: "Rut Roh, No Pic"; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-family: Russo One; font-size: 24px; background-color: rgba(0, 0, 0, 0); }
+
+/* For all other bot names */
+.not-first .bot-name { color: Gainsboro; text-shadow: 4px 4px 4px #454545; font-family: Russo One; font-size: 16px !important; } 
+.not-first .vs { color: Gainsboro; text-shadow: 4px 4px 4px #454545; font-family: Russo One; font-size: 20px !important; } 
