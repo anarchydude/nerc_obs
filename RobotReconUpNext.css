@@ -4,25 +4,25 @@
 body { background: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 
 /* Coming Up Literal Text */
-.text-center.w-100.mb-3 { font-family: Impact; font-size: 36px; color: Gainsboro; text-shadow: 2px 2px 4px #000000; letter-spacing: 1.1px }
+.text-center.w-100.mb-3 { font-family: Russo One; font-size: 36px; color: Gainsboro; text-shadow: 2px 2px 4px #000000; letter-spacing: 1.1px }
 
 /* Main Full area below the coming up text */
-.text-center.md.hydrated { border-style: outset; border-color: rgba(236, 58, 25, 0.60); border-width: 10px; background: rgba(50, 50, 50, 0.5); } 
+.text-center.md.hydrated { border-style: outset; border-color: rgba(236, 58, 25, 0.60); border-radius: 5px; border-width: 10px; background: rgba(50, 50, 50, 0.5); }
 
 /* The bot names in the field */
-.bot-name.mb-3 { font-family: Impact; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 20px; }
+.bot-name.mb-3 { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 20px; }
 
 /* The stats on either side of the middle label */
-.stat { font-family: Impact; color: Gainsboro; text-shadow: 2px 2px 4px #000000; text-align: center; }
+.stat { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; text-align: center; }
 
 /* The midddle label with the main field for the stats */
-.label { font-family: Impact; color: Gainsboro; text-transform: uppercase; text-shadow: 2px 2px 4px #000000; }
+.label { font-family: Russo One; color: Gainsboro; text-transform: uppercase; text-shadow: 2px 2px 4px #000000; }
 
 /* VS text */
-.vs { font-family: Impact; color: rgba(236, 58, 25, 0.7); text-transform: uppercase; text-shadow: 2px 2px 4px #000000; }
+.vs { font-family: Russo One; color: rgba(236, 58, 25, 0.7); text-transform: uppercase; text-shadow: 2px 2px 4px #000000; }
 
 /* This is the no image available text */
 .no-bot-image.confirmed { visibility: hidden; position: relative }
 
 /* Replacing the no image text - https://www.geeksforgeeks.org/how-to-replace-text-with-css/ */
-.no-bot-image.confirmed:after { visibility: visible; position: absolute; width: 200; height: 200; content: "Rut Roh, No Pic"; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-family: Impact; font-size: 24px; background-color: rgba(0, 0, 0, 0); }
+.no-bot-image.confirmed:after { visibility: visible; position: absolute; width: 200; height: 200; content: "Rut Roh, No Pic"; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-family: Russo One; font-size: 24px; background-color: rgba(0, 0, 0, 0); }
