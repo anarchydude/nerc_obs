@@ -31,3 +31,7 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 
 /* Additional stripping of data */
 /*.not-first.stats { visibility: hidden; max-height: 0 !important; }*/
+
+/* Adding # of fights a match is in */
+.position { display: inherit !important; }
+.position-num { display: none }
