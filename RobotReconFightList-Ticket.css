@@ -1,0 +1,73 @@
+/* Default */
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+
+/* Remove all images */
+.no-bot-image { visibility: hidden; max-height: 0; }
+.bot-image-wrapper { visibility: hidden; max-height: 0; }
+.app-bot-image { visibility: hidden; max-height: 0; }
+
+@keyframes verticalTicker {
+  0% {
+    transform: translateY(0);
+  }
+  12.5% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(calc(-100% * 1));
+  }
+  37.5% {
+    transform: translateY(calc(-100% * 1));
+  }
+  50% {
+    transform: translateY(calc(-100% * 2));
+  }
+  62.5% {
+    transform: translateY(calc(-100% * 2));
+  }
+  75% {
+    transform: translateY(calc(-100% * 3));
+  }
+  87.5% {
+    transform: translateY(calc(-100% * 3));
+  }
+  100% {
+    transform: translateY(calc(-100% * 4));
+  }
+}
+
+.text-center {
+  text-align: center;
+  visibility: hidden;
+  max-height: 0;
+}
+
+.bot-images {
+  height: 30px;
+  overflow: hidden;
+  visibility: visible;
+  max-height: none;
+}
+
+.bot-images {
+  display: flex;
+  flex-direction: column;
+  animation: verticalTicker 32s linear infinite; /* Adjust the duration as needed */
+}
+
+/* More specific styles for .bot-name.vs */
+.row-1 .bot-name.vs,
+.row-2 .bot-name.vs,
+.row-3 .bot-name.vs,
+.row-4 .bot-name.vs,
+.row-5 .bot-name.vs,
+.row-6 .bot-name.vs,
+.row-7 .bot-name.vs,
+.row-8 .bot-name.vs {
+  visibility: visible;
+  color: Gainsboro !important;
+  text-shadow: 4px 4px 4px #454545;
+  font-family: Russo One;
+  font-size: 22px;
+  margin: 0;
+}
