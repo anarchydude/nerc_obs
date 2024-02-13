@@ -1,0 +1,35 @@
+/* This is re-create the NERC FightList in Robot Recon */
+
+/* https://develop.robotreconapp.com/stream-support/now-fighting?display=all&showStats=1&eventId=moto23multi&arenaId=main&title=Fight%20List&noImageText=Rut%20Roh,%20No%20Pic */
+/* This is the test link to check against, eventId, and the main URL will change based on  
+
+/* Default setup */
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+
+/* Fight List Content */
+
+/* Fight List literal text */
+.text-center.w-100.mb-3 { font-family: Russo One; font-size: 36px; color: Gainsboro; text-shadow: 2px 2px 4px #000000; letter-spacing: 1.1px }
+
+/* Main Full area below the coming up text */
+.text-center.md.hydrated { border-style: outset; border-color: rgba(236, 58, 25, 0.60); border-radius: 8px; border-width: 10px; background: rgba(50, 50, 50, 0.5); }
+
+/* Removing the images from the bots in the list from everything but what's up next */
+.not-first.no-bot-image { visibility: hidden; max-height: 0; }
+.not-first.bot-image-wrapper { visibility: hidden; max-height: 0; }
+.not-first.app-bot-image { visibility: hidden; max-height: 0; }
+
+/* No In-Box in this case */
+.is-first { visibility: hidden; max-height: 0; display: none; }
+
+/* For all other bot names */
+.not-first.bot-name { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 16px; }
+.not-first.vs { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 20px; }
+.not-first.team-name { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 12px; }
+
+/* Additional stripping of data */
+/*.not-first.stats { visibility: hidden; max-height: 0 !important; }*/
+
+/* Adding # of fights a match is in */
+.position { display: inherit !important; }
+.position-num { display: none }
