@@ -6,10 +6,14 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 
 /* In Box Content */
 
-.no-bot-image { visibility: hidden; }
-.vs { visibility: hidden; }
-.bot-image-wrapper { visibility: hidden; }
-.app-bot-image { visibility: hidden; }
+/* Hiding the other images and text */
+.no-bot-image { visibility: hidden; display: none }
+.vs { visibility: hidden; display: none; }
+.bot-image-wrapper { visibility: hidden; display: none; }
+.app-bot-image { visibility: hidden; display: none; }
+
+/* Since code is now baked in, we need to override defaults */
+.text-center.md.hydrated { border-style: none; background: none; }
 
 /* This is the bot name section */
 .bot-name.mb-3 { color: Gainsboro; text-shadow: 4px 4px 4px #454545; font-family: Russo One; font-size: 22px; } 
