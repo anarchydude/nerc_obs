@@ -20,5 +20,11 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 /* Second here is to hide it, if using in-box text somewhere else */
 .bot-name.mb-3 { visibility: hidden; position: relative; }
 
+/* Hide VS */
+.vs { visibility: hidden; }
+
+/* Since code is now baked in, we need to override defaults */
+.text-center.md.hydrated { border-style: none; background: none; }
+
 /* Set image border for .bot-image  */
 .bot-image-wrapper { opacity: 0.75; border-top-style: outset; border-left-style: outset; border-right-style: outset; border-bottom-style: outset; border-color: gray; border-width: 8px; margin-bottom: 0px; }
