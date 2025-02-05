@@ -2,7 +2,11 @@
 /* Can't seem to do wildcarding, so blanket elements are needed */
 
 /* Default setup */
-body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+body { 
+    background-color: rgba(0, 0, 0, 0); 
+    margin: 0px auto; 
+    overflow: hidden; 
+}
 
 /* In Box Content */
 
@@ -16,4 +20,16 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 .text-center.md.hydrated { border-style: none; background: none; }
 
 /* This is the bot name section */
-.bot-name.mb-3 { color: Gainsboro; text-shadow: 4px 4px 4px #454545; font-family: Russo One; font-size: 22px; } 
+/* We have to set a new width and height to match the OBS element, and center the text */
+.bot-name.mb-3 { 
+    color: Gainsboro; 
+    text-shadow: 4px 4px 4px #454545; 
+    font-family: Russo One; 
+    font-size: 22px; 
+    width: 240px; /* Set new width */
+    height: 90px; /* Set new height */
+    display: flex; /* Add Flexbox */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    text-align: center; /* Center text horizontally */
+}
