@@ -1,7 +1,7 @@
 /* This is re-create the NERC FightList in Robot Recon */
 
 /* https://develop.robotreconapp.com/stream-support/now-fighting?display=all&showStats=1&eventId=moto23multi&arenaId=main&title=Fight%20List&noImageText=Rut%20Roh,%20No%20Pic */
-/* This is the test link to check against, eventId, and the main URL will change based on  
+/* This is the test link to check against, eventId, and the main URL will change based on  */
 
 /* Default setup */
 body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
@@ -20,18 +20,20 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 .not-first.app-bot-image { visibility: hidden; max-height: 0; }
 
 /* VS text and Bot Names for the upcoming fight */
-.is-first.bot-name { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 20px; }
-.is-first.vs { font-family: Russo One; color: rgba(236, 58, 25, 0.7); text-transform: uppercase; text-shadow: 2px 2px 4px #000000; }
-.is-first.stats { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 12px; }
+.is-first.bot-header-row td:nth-child(2) .bot-name, .is-first td:nth-child(4) .bot-name { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 20px; }
+.is-first.bot-header-row td.vs { font-family: Russo One; color: rgba(236, 58, 25, 0.7); text-transform: uppercase; text-shadow: 2px 2px 4px #000000; }
+.is-first.stats td:nth-child(2) .stat, .is-first.stats td:nth-child(4) .stat { text-align: center; font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 16px; }
+.is-first.stats td.label { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 16px; }
 
 /* For all other bot names */
-.not-first.bot-name { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 16px; }
-.not-first.vs { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 20px; }
-.not-first.team-name { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 12px; }
+.not-first.bot-header-row td:nth-child(2) .bot-name, .not-first td:nth-child(4) .bot-name { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 16px; }
+.not-first.bot-header-row td.vs { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 20px; }
+.not-first.stats td:nth-child(2) .stat, .not-first.stats td:nth-child(4) .stat { text-align: center; color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 14px; }
+.not-first.stats td.label { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 12px; }
 
 /* Additional stripping of data */
 /*.not-first.stats { visibility: hidden; max-height: 0 !important; }*/
 
-/* Adding # of fights a match is in */
-.position { display: inherit !important; }
-.position-num { display: none }
+/* Adding # of fights on the side. Needs some text manipulation */
+/*.position { display: inherit !important; }
+.position-num { display: none }*/
