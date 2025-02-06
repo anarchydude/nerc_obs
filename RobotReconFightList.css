@@ -35,5 +35,6 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 /*.not-first.stats { visibility: hidden; max-height: 0 !important; }*/
 
 /* Adding # of fights on the side. Needs some text manipulation */
-/*.position { display: inherit !important; }
-.position-num { display: none }*/
+.position { display: inherit !important; }
+.position-num { display: none }
+.bot-header-row td.position { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; }
