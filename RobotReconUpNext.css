@@ -10,10 +10,10 @@ body { background: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 .text-center.md.hydrated { border-style: outset; border-color: rgba(236, 58, 25, 0.60); border-radius: 5px; border-width: 10px; background: rgba(50, 50, 50, 0.5); }
 
 /* The bot names in the field */
-.bot-name.mb-3 { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 20px; }
+.bot-name.mb-3 { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 20px; width: inherit; max-width: 250px; }
 
 /* The stats on either side of the middle label */
-.stat { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; text-align: center; }
+.stat { width: inherit; max-width: 250px; font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; text-align: center; }
 
 /* The midddle label with the main field for the stats */
 .label { font-family: Russo One; color: Gainsboro; text-transform: uppercase; text-shadow: 2px 2px 4px #000000; }

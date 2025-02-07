@@ -20,15 +20,15 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 .not-first.app-bot-image { visibility: hidden; max-height: 0; }
 
 /* VS text and Bot Names for the upcoming fight */
-.is-first.bot-header-row td:nth-child(2) .bot-name, .is-first td:nth-child(4) .bot-name { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 20px; }
+.is-first.bot-header-row td:nth-child(2) .bot-name, .is-first td:nth-child(4) .bot-name { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 20px; width: inherit; max-width: 250px; text-align: center; }
 .is-first.bot-header-row td.vs { font-family: Russo One; color: rgba(236, 58, 25, 0.7); text-transform: uppercase; text-shadow: 2px 2px 4px #000000; }
-.is-first.stats td:nth-child(2) .stat, .is-first.stats td:nth-child(4) .stat { text-align: center; font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 16px; }
+.is-first.stats td:nth-child(2) .stat, .is-first.stats td:nth-child(4) .stat { width: inherit; max-width: 250px; font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 16px; text-align: center; }
 .is-first.stats td.label { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 16px; }
 
 /* For all other bot names */
-.not-first.bot-header-row td:nth-child(2) .bot-name, .not-first td:nth-child(4) .bot-name { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 16px; }
+.not-first.bot-header-row td:nth-child(2) .bot-name, .not-first td:nth-child(4) .bot-name { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 16px; width: inherit; max-width: 250px; }
 .not-first.bot-header-row td.vs { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 20px; }
-.not-first.stats td:nth-child(2) .stat, .not-first.stats td:nth-child(4) .stat { text-align: center; color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 14px; }
+.not-first.stats td:nth-child(2) .stat, .not-first.stats td:nth-child(4) .stat { width: inherit; max-width: 250px; color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 14px; text-align: center; }
 .not-first.stats td.label { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; font-size: 12px; }
 
 /* Additional stripping of data */
@@ -37,4 +37,4 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 /* Adding # of fights on the side. Needs some text manipulation */
 .position { display: inherit !important; }
 .position-num { display: none }
-.bot-header-row td.position { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; }
+.bot-header-row td.position { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; align-items: center; }
