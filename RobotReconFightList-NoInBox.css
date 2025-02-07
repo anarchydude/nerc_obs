@@ -23,9 +23,10 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 .is-first { visibility: hidden; max-height: 0; display: none; }
 
 /* For all other bot names */
-.not-first.bot-name { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 16px; }
-.not-first.vs { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 20px; }
-.not-first.team-name { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 12px; }
+.not-first.bot-header-row td:nth-child(2) .bot-name, .not-first td:nth-child(4) .bot-name { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 16px; }
+.not-first.bot-header-row td.vs { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 20px; }
+.not-first.stats td.label { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 12px; }
+.not-first.stats td:nth-child(2) .stat, .not-first.stats td:nth-child(4) .stat { color: Gainsboro; text-shadow: 2px 2px 4px #454545; font-family: Russo One; font-size: 14px; }
 
 /* Additional stripping of data */
 /*.not-first.stats { visibility: hidden; max-height: 0 !important; }*/
@@ -33,3 +34,4 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 /* Adding # of fights a match is in */
 .position { display: inherit !important; }
 .position-num { display: none }
+.bot-header-row td.position { font-family: Russo One; color: Gainsboro; text-shadow: 2px 2px 4px #000000; }
