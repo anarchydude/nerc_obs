@@ -1,14 +1,11 @@
 #include <Keyboard.h>
 
-// This is a universal build of the Stream Deck code that will work on macOS and Windows.
-// ChatGPT helped to churn this around fast.
-
 // Put your *working* pins here in physical order:
 // top row L->R, then bottom row L->R (excluding the dead one)
-const uint8_t pins[] = {3,4,5,6,7,8,9,10,15};  // <-- adjust to your wiring/order
+const uint8_t pins[] = {2,3,4,5,6,7,8,9,10,15};  // <-- adjust to your wiring/order
 
 // Outputs Ctrl+Alt+Shift+1..9 (use '0' too if you have 10 buttons)
-const char outKeys[] = {'1','2','3','4','5','6','7','8','9'};
+const char outKeys[] = {'1','2','3','4','5','6','7','8','9','0'};
 
 const uint8_t N = sizeof(pins) / sizeof(pins[0]);
 
